@@ -1401,6 +1401,159 @@ footer p a:hover {
 
 /* pricing start  */
 
-.sticky-top {
-    z-index: 10 !important;
-  }
+.back-to-top {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: var(--background-color-1);
+    box-shadow: var(--shadow-1);
+    line-height: 50px;
+    text-align: center;
+    position: fixed;
+    z-index: 3;
+    left: 95%;
+    bottom: 60px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.back-to-top:hover {
+    color: #ce4912;
+}
+.back-to-top::before {
+    content: '';
+    background: var(--background-color-3);
+    box-shadow: var(--shadow-2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    z-index: -1;
+}
+
+.back-to-top:hover::before {
+    opacity: 1;
+}
+
+
+/* portfolio modal start */ 
+
+.modal {
+	z-index: 99999999;
+	background: #212428;
+	padding: 60px 15px !important;
+}
+
+.modal-dialog {
+    width: 100%;
+    max-width: 90%;
+}
+.modal-dialog .modal-content {
+	padding: 45px;
+	border-radius: 10px;
+	overflow: hidden;
+	border: none;
+	z-index: 1;
+	background: var(--background-color-1);
+	box-shadow: var(--shadow-1);
+    position: relative;  
+}
+
+.modal-dialog .modal-content .modal-header {
+    border-bottom: 0;
+    margin-top: -50px;
+}
+
+.modal-dialog .modal-content .modal-header button {
+    height: 50px;
+    width: 50px;
+    border: 0;
+    border-radius: 100%;
+    background: var(--background-color-1);
+    box-shadow: var(--shadow-1);
+    color: #fff;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 16px;
+    text-align: center;
+    z-index: 3;
+    transition: all 0.5s ease-in-out;
+}
+
+.modal-dialog .modal-content .modal-header button:hover {
+    color: #ce4912;
+}
+
+.modal-dialog .modal-content .modal-header button::before {
+    content: '';
+    background: var(--background-color-3);
+    box-shadow: var(--shadow-2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    z-index: -1;
+}
+.modal-dialog .modal-content .modal-header button:hover:before {
+    opacity: 1;
+}
+
+.thumb_img {
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+.thumb_img img {
+    transition: all 0.5s ease-in-out;
+}
+
+.thumb_img:hover img {
+    transform: scale(1.1);
+}
+.portfolio_popup_text h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #c4cfde;
+    font-size: 16px;
+}
+.portfolio_popup_text h3{
+    font-size: 34px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.portfolio_popup_text p {
+    font-size: 18px;
+    line-height: 30px;
+}
+.portfolio_popup_text .btn_grp{
+
+}
+.portfolio_popup_text .btn_grp .btn {
+    background: var(--background-color-1);
+    color: #ce4912;
+    padding: 10px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    box-shadow: var(--shadow-1);
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    margin-right: 20px;
+}
+
+.portfolio_popup_text .btn_grp .btn:hover {
+    transform: translateY(-10px);
+}
+
+/* portfolio modal end */

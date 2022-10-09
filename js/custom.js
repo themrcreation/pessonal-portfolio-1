@@ -11,7 +11,7 @@ $(function(){
       $(window).scroll(function(){
         var scrolling = $(this).scrollTop();
         
-        if(scrolling > 200){
+        if(scrolling > 300){
             $('.navbar').addClass('sticky_header');
         }
         else {
@@ -19,6 +19,22 @@ $(function(){
         }
         });
 
+                //==== Back-to-top button
+        $(window).on('scroll', function(event) {
+            if($(this).scrollTop() > 100){
+                $('.back-to-top').fadeIn(300)
+            } else{
+                $('.back-to-top').fadeOut(300)
+            }
+        });
+        //==== Animate the scroll to top
+        $('.back-to-top').on('click', function(event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: 0,
+            }, 2000);
+        });
 
       //copy 
       var imJs = {
