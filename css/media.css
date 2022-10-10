@@ -1,0 +1,418 @@
+/*  Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .mb-resp {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px){
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    .p-100 {
+        padding: 50px 0px;
+    }
+    .subtitle {
+        font-size: 12px;
+    }
+    .header_txt h6 {
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+
+    .header_txt h1 {
+        font-size: 40px;
+    }
+
+    .header_txt h2 {
+        font-size: 40px;
+    }
+
+    .header_txt p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .header_social_share {
+        padding-top: 50px;
+    }
+
+    .social_share_left h5 {
+        padding-bottom: 20px;
+    }
+
+    .social_share_left i {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        font-size: 22px;
+    }
+
+    .header_thumb {
+        margin-top: 25%;
+    }
+    .f_inner_txt h4 {
+        font-size: 16px;
+    }
+
+    .f_inner_icon i {
+        font-size: 25px;
+    }
+    .f_inner_txt p {
+        line-height: 24px;
+        font-size: 13px;
+    }
+
+    .port_inner h3 {
+        font-size: 22px;
+    }
+
+    #resume .resume_tab a {
+        font-size: 14px;
+    }
+    .edu_title_head h4 {
+        font-size: 16px;
+    }
+    .edu_title_head span {
+        font-size: 12px;
+    }
+
+    .edu_result span {
+        padding: 8px 10px;
+        font-size: 16px;
+    }
+
+    .education_description p {
+        line-height: 24px;
+        font-size: 13px;
+    }
+    .progress-charts h6 {
+        font-size: 10px;
+    }
+
+    .progress-charts .progress .progress-bar .percent-label {
+        font-size: 12px;
+    }
+
+    .testimonial .card-info .card-content h6 {
+        padding-top: 10px;
+        padding-bottom: 15px;
+        font-size: 12px;
+    }
+
+   .testimonial .card-info .card-content h5 {
+        font-size: 20px;
+    }
+
+    .testimonial .card-info .card-content p {
+        line-height: 0px;
+    }
+
+    .testimonial .card-description h5{
+        font-size: 16px;
+    }
+
+    .testimonial .card-description span {
+        font-size: 10px;
+    }
+
+    .rating {
+        padding: 5px;
+        line-height: 46px;
+    }
+
+    .rating i {
+        font-size: 20px;
+    }
+
+    .testimonial .card-description p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .designation {
+        padding-bottom: 100px;
+    }
+
+    .tab-navigation-button .nav-item .nav-link {
+        font-size: 15px;
+    }
+    .client-card .main-content .thumbnail {
+        height: 110px;
+        padding: 10px;
+    }
+
+    
+    .navigation_wrapper ul.nav li a {
+        font-size: 15px;
+    }
+
+    .pricing_header {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .p_header_right {
+        padding: 15px 20px;
+    }
+    .p_header_left h3 {
+        font-size: 25px;
+    }
+
+    .p_header_left span {
+        font-size: 15px;
+    }
+
+    .pricing_body {
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .pricing_body p.description {
+        line-height: 24px;
+        font-size: 15px;
+    }
+    .check_wrapper .check p {
+        font-size: 15px;
+    }
+    .check_wrapper .check i {
+        font-size: 15px;
+        margin-right: 8px;
+    }
+    .contact_about_area {
+        height: 100%;
+    }
+
+    .pricing_footer a.btn {
+        padding: 10px 0;
+    }
+
+    .pricing_footer a {
+        font-size: 15px;
+    }
+
+    .portfolio_popup_text h6 {
+        font-size: 14px;
+    }
+
+    .portfolio_popup_text h3 {
+        font-size: 25px;
+        margin-top: 15px;
+        margin-bottom: 12px;
+    }
+
+    .portfolio_popup_text p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .portfolio_popup_text .btn_grp .btn {
+        padding: 5px 10px;
+        font-size: 12px;
+        margin-right: 10px;  
+    }
+ }
+
+
+
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px){ 
+    .mb-resp {
+        margin-bottom: 30px;
+    }
+
+    .header_txt h6 {
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+
+    .header_social_share {
+        padding-top: 100px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    #resume .resume_tab a {
+        font-size: 13px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .skill_area .title,
+    .education_area .title {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    .edu_title_head h4 {
+        font-size: 15px;
+        padding-bottom: 0;
+        line-height: 24px;
+    }
+
+    .edu_title_head span {
+        font-size: 11px;
+    }
+
+    .education_title {
+        padding-bottom: 10px;
+    }
+
+    .education_single_list {
+        padding: 25px 25px;
+    }
+
+    .edu_title_head h4::before {
+        top: 25px;
+    }
+
+    .edu_title_head h4::after {
+        top: 18px;
+    }
+
+    .edu_result span {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+    .education_description p {
+        line-height: 24px;
+        font-size: 12px;
+    }
+
+    .progress-charts h6 {
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .card-info {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .testimonial .card-info .card_img {
+        width: 150px;
+        margin-right: 20px;
+    }
+
+    .testimonial .card-info .card-content h6 {
+        padding-top: 0;
+        padding-bottom: 20px;
+        font-size: 12px;
+
+    }
+    .testimonial .card-info .card-content h5 {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+    .testimonial .card-info .card-content p {
+        font-size: 12px;
+        line-height: 0;
+    }
+
+    .testimonial .card {
+        margin-top: 30px;
+    }
+
+    .rating i {
+        font-size: 10px;
+    }
+
+    .rating {
+        padding: 10px 20px;
+    }
+
+    .testimonial_activator button.slide-arrow {
+        display: none;
+    }
+
+    .testimonial .inner .card-description::after {
+        display: none;
+    }
+
+    .tab-navigation-button .nav-item .nav-link {
+        font-weight: 600;
+        height: 50px;
+    }
+
+    .clients-wrappers {
+        margin-bottom: 25px;
+    }
+
+    .client-card .main-content .thumbnail {
+        padding: 20px;
+    }
+
+
+    .check_wrapper .check p {
+        font-size: 16px;
+    }
+
+    .check_wrapper .check i {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    .pricing_footer a.btn {
+        padding: 10px 0;
+    }
+
+    .pricing_footer a {
+        font-size: 15px;
+    }
+
+    
+    .time_line .mt-5 {
+        margin-top: 20px !important;
+    }
+
+    .contact_about_area .thumbnail img {
+        width: 100%;
+    }
+
+    .contact_about_area {
+        margin-bottom: 30px;
+    }
+
+    .p-100 {
+        padding: 50px 0;
+    }
+}
+    
+
+
+/*  Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px){ 
+
+    /* nav responsive  */
+    
+}
+
+/*  Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {  }
+
