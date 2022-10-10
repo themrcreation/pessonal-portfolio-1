@@ -79,6 +79,10 @@ html {
     padding: 100px 0;
 }
 
+.mt-30 {
+    margin-top: 30px;
+}
+
 /* all common css end  */
 
 :root {
@@ -172,16 +176,20 @@ a.navbar-brand {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     padding-left: 20px;
+    transition: all 0.5s ease-in-out;
 }
 
 .navbar-nav .nav-item .nav-link.active {
-    color: #fff;
+    color: #ce4912;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: #fff;
+    color: #ce4912;
 }
 
+.navbar i {
+    color: #ce4912;
+}
 .navbar form .btn {
     background: var(--background-color-1);
     color: #ce4912;
@@ -314,23 +322,30 @@ a.navbar-brand {
     color: #ce4912;
 }
 .header_thumb {
+    height: 80%;
+    width: 90%;
+    background: var(--background-color-1);
+	box-shadow: var(--shadow-1);
+    margin: auto;
+    margin-top: 150px;
     position: relative;
 }
-.header_thumb::before {
+/* .header_thumb::before {
 	content: "";
 	position: absolute;
-	height: 450px;
+	height: 100%;
 	width: 100%;
 	left: 50%;
-	top: 180px;
-	transform: translateX(-50%);
+	bottom: 0;
+	transform: translate(-50%);
 	background: var(--background-color-1);
 	box-shadow: var(--shadow-1);
-}
+} */
+
 
 .thumb_inner img {
     position: absolute;
-    top: -58px;
+    bottom: 0px;
 }
 /* nav css end */
 
@@ -690,6 +705,8 @@ a.navbar-brand {
 .testimonial {
     margin-top: 30px;
 }
+
+.testimonial .card-info,
 .testimonial .card {
     border: none;
     padding: 25px;
@@ -698,31 +715,35 @@ a.navbar-brand {
     border-radius: 20px;
 }
 
+.testimonial .card-info {
+    height: 100%;
+}
+
 .mt {
     margin-top: 70px;
 }
-.testimonial .card:nth-child(2){
-    margin-top: 150px;
+.testimonial .card{
+    margin-top: 50px;
 }
 .testimonial .card-description {
     position: relative;
     padding: 25px 10px;
 }
-.testimonial .card .card_img {
+.testimonial .card-info .card_img {
     overflow: hidden;
     border-radius: 10px;
 }
 
-.testimonial .card .card_img img {
+.testimonial .card-info .card_img img {
     transition: all 0.5s ease-in-out;
 }
 
-.testimonial .card .card_img:hover img{
+.testimonial .card-info .card_img:hover img{
     transform: scale(1.1);
 }
 
-.testimonial .card .card-body h6 {
-    padding-top: 20px;
+.testimonial .card-info .card-content h6 {
+    padding-top: 30px;
     padding-bottom: 35px;
     color: #ce4912;
     font-size: 12px;
@@ -731,7 +752,7 @@ a.navbar-brand {
 }
 
 .testimonial .card-description h5,
-.testimonial .card .card-body h5 {
+.testimonial .card-info .card-content h5 {
     font-size: 24px;
     padding-bottom: 20px;
     font-weight: 600;
@@ -745,7 +766,7 @@ a.navbar-brand {
     font-family: 'Poppins', sans-serif;
 }
 
-.testimonial .card .card-body p {
+.testimonial .card-info .card-content p {
     font-size: 14px;
     font-weight: 500;
     line-height: 34px;
@@ -779,10 +800,10 @@ a.navbar-brand {
 .testimonial .inner .card-description::after {
 	content: "";
 	position: absolute;
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
 	left: -25px;
-    top: -110px;
+	top: -85px;
 	background: transparent;
 	background-image: url(../img/quote.png);
 	background-size: cover;
@@ -798,20 +819,20 @@ a.navbar-brand {
 }
 
 .testimonial_activator button.slide-arrow {
-	font-size: 20px;
+	font-size: 15px;
 	position: absolute;
 	right: 130px;
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-    color: #fff;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
 	background: var(--background-color-1);
 	box-shadow: var(--shadow-1);
 	border: 0 none;
-	top: 30px;
+	top: 25px;
 	z-index: 3;
 	border-radius: 6px;
-    transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
 button:focus {

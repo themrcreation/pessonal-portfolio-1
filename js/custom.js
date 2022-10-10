@@ -83,7 +83,14 @@ $(function(){
                 adaptiveHeight: true,
                 cssEase: 'linear',
                 prevArrow: '<button class="slide-arrow prev-arrow"><i class="fas fa-arrow-left"></i></button>',
-                nextArrow: '<button class="slide-arrow next-arrow"><i class="fas fa-arrow-right"></i></button>'
+                nextArrow: '<button class="slide-arrow next-arrow"><i class="fas fa-arrow-right"></i></button>',
+                responsive: [
+                    {
+                        breakpoint: 993,
+                        settings: {
+                            arrows: false,
+                        }
+                    }]
             });
         },
 
