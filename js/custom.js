@@ -50,9 +50,11 @@ $(function(){
 
         },
         methods: function (e) {
+            imJs.mobileMenuActive();
             imJs.wowActive();
             imJs.stickyAdjust();
             imJs.testimonialActivation();
+            imJs.onePageNav();
         },
         
         wowActive: function () {
@@ -91,6 +93,65 @@ $(function(){
                             arrows: false,
                         }
                     }]
+            });
+        },
+
+        mobileMenuActive: function (e) {
+
+            $('.navbar-toggler').on('click', function (e) {
+                e.preventDefault();
+                $('.popup-mobile-menu').addClass('menu-open');
+                imJs._html.css({
+                    overflow: 'hidden'
+                })
+            });
+
+            $('.close-menu-activation, .popup-mobile-menu .primary-menu .nav-item a').on('click', function (e) {
+                e.preventDefault();
+                $('.popup-mobile-menu').removeClass('menu-open');
+                $('.popup-mobile-menu .has-droupdown > a').removeClass('open').siblings('.submenu').removeClass('active').slideUp('400');
+                imJs._html.css({
+                    overflow: ''
+                })
+            });
+
+            $('.popup-mobile-menu').on('click', function (e) {
+                e.target === this && $('.popup-mobile-menu').removeClass('menu-open');
+                imJs._html.css({
+                    overflow: ''
+                })
+            });
+
+            $('.popup-mobile-menu .has-droupdown > a').on('click', function (e) {
+                e.preventDefault();
+                $(this).siblings('.submenu').toggleClass('active').slideToggle('400');
+                $(this).toggleClass('open');
+                imJs._html.css({
+                    overflow: ''
+                })
+            });
+
+
+            $('.nav-pills .nav-link').on('click', function (e) {
+                $('.rn-popup-mobile-menu').removeClass('menu-open');
+                imJs._html.css({
+                    overflow: ''
+                })
+            })
+
+        },
+
+        onePageNav: function () {
+            $('.onepagenav').onePageNav({
+                currentClass: 'current',
+                changeHash: true,
+                scrollSpeed: 500,
+                scrollThreshold: 0.2,
+                filter: ':not(.external)',
+                easing: 'swing',
+                scrollChange: function($currentListItem) {
+                    console.log(this);
+                }
             });
         },
 
