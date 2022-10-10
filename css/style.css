@@ -136,6 +136,15 @@ hr {
       transform: none;
     }
   }
+  .fade.show {
+	opacity: 1;
+    transition: all 0.8s ease-in-out;
+}
+
+  .fade {
+	opacity: 0;
+	transition: opacity .8s ease-in-out;
+}
 /* nav css start  */
 
 .sticky_header {
@@ -202,6 +211,9 @@ a.navbar-brand {
     border-radius: 10px;
     transition: all 0.5s ease-in-out;
 
+}
+.navbar form {
+	margin-left: 20px;
 }
 
 .navbar form .btn::before{
