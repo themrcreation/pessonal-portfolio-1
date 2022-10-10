@@ -649,6 +649,11 @@
 /*  Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
 
+    body {
+        overflow: hidden;
+    }
+
+
     .popup-mobile-menu .inner {
         width: 310px;
         padding: 10px;
@@ -980,5 +985,9 @@
 
     .contact_form_wrapper {
         margin-top: 30px;
+    }
+
+    .back-to-top {
+        left: 85%;
     }
 }
