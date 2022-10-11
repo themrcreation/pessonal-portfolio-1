@@ -54,7 +54,9 @@ $(function(){
             imJs.wowActive();
             imJs.stickyAdjust();
             imJs.testimonialActivation();
+            imJs.awsActivation();
             imJs.onePageNav();
+
         },
         
         wowActive: function () {
@@ -153,6 +155,10 @@ $(function(){
                     console.log(this);
                 }
             });
+        },
+
+        awsActivation:function(e){
+            AOS.init();
         },
 
     }

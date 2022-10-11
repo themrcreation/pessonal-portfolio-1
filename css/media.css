@@ -420,6 +420,13 @@
     .p-100 {
         padding: 50px 0;
     }
+    .back-to-top {
+        left: 90%;
+    }
+
+    .portfolio_popup_text {
+        margin-top: 25px;
+    }
 }
     
 
@@ -644,6 +651,28 @@
 
     .contact_form_wrapper {
         margin-top: 30px;
+    }
+    .back-to-top {
+        left: 90%;
+    }
+
+    .portfolio_popup_text {
+        margin-top: 25px;
+    }
+
+    .portfolio_popup_text h3 {
+        font-size: 26px;
+    }
+
+    .portfolio_popup_text p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .portfolio_popup_text .btn_grp .btn {
+        padding: 8px 12px;
+        font-size: 13px;
+        margin-right: 10px;
     }
 }
 /*  Extra small devices (portrait phones, less than 576px) */
@@ -989,5 +1018,24 @@
 
     .back-to-top {
         left: 85%;
+    }
+
+    .portfolio_popup_text {
+        margin-top: 25px;
+    }
+
+    .portfolio_popup_text h3 {
+        font-size: 18px;
+    }
+
+    .portfolio_popup_text p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .portfolio_popup_text .btn_grp .btn {
+        padding: 6px 10px;
+        font-size: 13px;
+        margin-right: 10px;
     }
 }
